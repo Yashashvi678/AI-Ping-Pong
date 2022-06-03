@@ -1,0 +1,84 @@
+body
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading
+{
+    width: 100%;
+    text-align: left;
+}
+
+.heading h3{
+    display: inline;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+#instruction
+{
+    float: right;
+    font-size: 22px;
+    border: 2px solid white ;
+}
+
+#play_game
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#game_status
+{
+    padding: 5px;
+}
+
+
+#restart
+{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.modal-dialog
+{
+    width: 90%;
+}
+
+
+.modal-body
+{
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.instruct
+{
+    font-size: 35px;
+    font-family: 'Racing Sans One', cursive;
+    text-decoration: underline;
+}
+
+#game_credit
+{
+    line-height: 3;
+    background-color: aliceblue;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 0px;
+}
+
+canvas
+{
+    border: 2px black;
+    margin-top: 140px;
+    box-shadow: 8px 8px 8px rgb(123, 255, 0);
+    border-radius: 20px;
+
+}
