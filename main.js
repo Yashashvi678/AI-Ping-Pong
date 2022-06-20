@@ -24,9 +24,8 @@ var ball = {
 function setup(){
   canvas =  createCanvas(700,600);
   canvas.parent('canvas');
-  video = createCapture(VIDEO);
-  video.parent('canvas');
 
+  video = createCapture(VIDEO);
   video.size(650, 450);
   video.hide();
 
@@ -43,6 +42,7 @@ function modelLoaded()
 rightWristX = 0;
 rightWristY = 0;
 scoreRightWrist = 0;
+game_status = "";
 
 
 function gotPoses(results)
@@ -51,7 +51,7 @@ function gotPoses(results)
 	{
 		rightWristX = results[0].pose.rightWrist.x;
 		rightWristY = results[0].pose.rightWrist.y;
-		console.log("rightWristX = " + rightWristX +  " , " +"rightWristY = " + rightWristY);
+		console.log("rightWristX = " + rightWristX +  " , " + "rightWristY = " + rightWristY);
     scoreRightWrist =  results[0].pose.keypoints[10].score;
     console.log(scoreRightWrist);
 	}
