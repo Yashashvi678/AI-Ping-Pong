@@ -34,6 +34,9 @@ function setup(){
   poseNet.on("pose", gotPoses);
 }
 
+
+
+
 function modelLoaded()
 {
   console.log("Model Loaded");
@@ -43,6 +46,15 @@ rightWristX = 0;
 rightWristY = 0;
 scoreRightWrist = 0;
 game_status = "";
+
+
+function StartGame()
+{
+   //Set the value of the status variable created in step 1 to “start”.
+   game_status = "start";
+ //Update the h3 tag which we have created inside index.html file in project 138 who has id “status” to "Game Is Loaded”.
+    document.getElementById("status").innerHTML = "Game Is Loaded";
+}
 
 
 function gotPoses(results)
